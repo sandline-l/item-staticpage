@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+   width: 100%;
+   border-bottom: 3px solid #00953B;
+}
+.head{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    background-image: url(../img/logo.jpg);
+    background-size: 100% 100%;
+    width: 250px;
+    height: 107px;
+    float: left;
+    margin: 35px 0;
+}
+.head-top ul{
+    float: right;
+    margin: 30px 0;
+}
+.head-top::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.head-top ul>li{
+    float: left;
+    width: 30px;
+    height: 58px;
+    padding: 0 35px;
+    border-right: 1px solid #EEEEEE;
+}
+.head-top ul li a{
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 30px;
+    height: 58px;
+}
+.head-top ul li:nth-of-type(1) a{
+    background-image: url(../img/icon_1.jpg);
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 30px;
+    height: 58px;
+}
+.head-top ul li:nth-of-type(2) a{
+    background-image: url(../img/icon_2.jpg);
+}
+.head-top ul li:nth-of-type(3) a{
+    background-image: url(../img/icon_3.jpg);
+}
+.head-top ul li:nth-of-type(4) a{
+    background-image: url(../img/icon_4.jpg);
+}
+.head-top ul li:nth-of-type(5) a{
+    background-image: url(../img/icon_5.jpg);
+}
+.head-top ul li:nth-of-type(6) a{
+    background-image: url(../img/icon_6.jpg);
+}
+
+.head-nav{
+    float: left;
+    margin: 0 0 35px 0;
+}
+.head-nav ul li{
+    float: left;
+}
+.head-foot::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.head-nav ul li a{
+    display: inline-block;
+    width: 92px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+}
+.head-nav ul li a.active{
+    display: inline-block;
+    width: 92px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #00953B;
+}
+.search{
+    float: right;
+}
+.search input{
+    width: 242px;
+    height: 42px;
+    border: 1px solid #00953B;
+    padding: 0 10px;
+    outline: none;
+    float: left;
+}
+.btn{
+    width: 100px;
+    height: 44px;
+    background-color: #00953B;
+    color: #fff;
+    float: right;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+/* 内容部分 */
+.content{
+    background-color: #F8F8F8;
+    width: 100%;
+    overflow: hidden;
+}
+/* 涉及到margin塌陷的问题 */
+.content-wrap{
+    width: 1200px;
+    margin: 40px auto;
+}
+
+/* 第一块内容区 */
+.content-wrap .content-first{
+    height: 500px;
+    width: 1200px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 5px 0px 0px #C6C6C6,
+                0 6px 8px 3px #C6C6C6;
+}
+.content-wrap .content-first img{
+    margin: 42px 0 42px 42px;
+    display: inline-block;
+}
+article{
+    width: 340px;
+    /* display: inline-block; */
+    position: absolute;
+    top: 42px;
+    right: 40px;
+   
+}
+article h2{
+    padding: 20px 0;
+    border-top: 2px solid #00953B;
+    border-bottom: 1px dashed #000;
+}
+article h2 a{
+    color: #00953B;
+}
+article p{
+    height: 40px;
+    line-height: 40px;
+}
+article p a{
+    color: #794AA3;
+    font-size: 14px;
+}
+
+/* 第二块内容区 */
+.content-second{
+    margin-top: 40px;
+    width: 100%;    
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 0px 0px #C6C6C6,
+                0 6px 8px 3px #C6C6C6;
+}
+.content-second p{
+    text-align: center;
+}
+.content-second p:nth-of-type(1){
+    margin: 40px 0 0;
+    font-size: 20px;
+}
+.content-second p:nth-of-type(2){
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+.content-second img{
+    width: 1120px;
+    height: 625px;
+    margin: 20px 40px 40px;
+}
+.content-second .start{
+    background-image: url(../img/start.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 370px;
+    transform: translate(-50%,0);
+}
+.content-second .circle{
+    background-image: url(../img/circle.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 370px;
+    transform: translate(-50%,0);
+}
+
+
+
+
+/* 茶之文化 */
+.content-third{
+    margin-top: 40px;
+    width: 100%;    
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 0px 0px #C6C6C6,
+                0 6px 8px 3px #C6C6C6;
+}
+.content-third p{
+    text-align: center;
+}
+.content-third p:nth-of-type(1){
+    margin: 40px 0 0;
+    font-size: 20px;
+}
+.content-third p:nth-of-type(2){
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.third-top{
+    width: 1120px;
+    height: 315px;
+    margin: 20px 40px 40px;
+    position: relative;
+}
+.third-top .third-top-left{
+    width: 550px;
+    height: 315px;
+    position: absolute;
+    
+}
+.third-top .third-top-left>div{
+    border: 1px solid #ccc;
+    width: 550px;
+    height: 152px;
+}
+.third-top .third-top-left div:nth-of-type(1){
+    margin-bottom: 10px;
+}
+.third-top .third-top-left img{
+    width: 155px;
+    height: 152px;
+    float: left;
+}
+.third-top .third-top-left>div div{
+    box-sizing: border-box;
+    float: right;
+    width: 393px;
+    height: 150px;
+    padding: 20px 15px 15px 25px;
+}
+.third-top .third-top-left>div div p{
+    margin-top: 25px;
+    font-size: 12px;
+    text-align: left;
+}
+.third-top span>a{
+    color: #00953B;
+    font-size: 12px;
+}
+
+.third-top .third-top-left>div:nth-of-type(1) div span{
+    position: absolute;
+    top: 120px;
+    right: 15px;
+}
+.third-top .third-top-left>div:nth-of-type(2) div span{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.third-top .third-top-right{
+    width: 550px;
+    height: 315px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.third-top .third-top-right>div:nth-of-type(1){
+    width:260px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    height: 315px;
+    margin-right: 20px;
+}
+.third-top .third-top-right>div:nth-of-type(1) span{
+    float: right;
+    margin-right: 10px;
+}
+.third-top .third-top-right>div:nth-of-type(1) p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.third-top .third-top-right>div:nth-of-type(2){
+    box-sizing: border-box;
+    width:265px;
+    height: 315px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: 2px solid #00953B;
+}
+.third-top .third-top-right>div:nth-of-type(2) p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #00953B;
+    margin: 20px 0 10px 10px;
+}
+
+.third-top .third-top-right>div:nth-of-type(2) img{
+    display: block;
+    margin: 0 auto;
+}
+.third-top .third-top-right>div:nth-of-type(2) ul{
+    width: 240px;
+    margin: 0 auto;
+}
+
+.third-top .third-top-right>div:nth-of-type(2) ul>li{
+    font-size: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.third-top .third-top-right>div:nth-of-type(2) ul>li a{
+    color: #000;
+}
+
+.third-top .third-top-right p{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.third-bottom{
+    width: 1120px;
+    height: 312px;
+    margin: 22px 40px 40px;
+    justify-content: space-between;
+    display: flex;
+}
+.third-bottom div{
+    width:260px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    height: 315px;
+}
+.content-third .third-bottom div span{
+    float: right;
+    margin-right: 10px;
+}
+.content-third .third-bottom div span a{
+    color: #00953B;
+    font-size: 12px;
+}
+.content-third .third-bottom div p{
+    margin:0 0 10px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* 茶之经典 */
+.content-four{
+    margin-top: 40px;
+    width: 100%;    
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 0px 0px #C6C6C6,
+                0 6px 8px 3px #C6C6C6;
+}
+.content-four p{
+    text-align: center;
+}
+.content-four p:nth-of-type(1){
+    margin: 40px 0 0;
+    font-size: 20px;
+}
+.content-four p:nth-of-type(2){
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.content-four .four-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1120px;
+    margin: 20px 40px 40px;
+}
+.content-four .four-wrap div{
+    width: 265px;
+}
+.content-four .four-wrap div img{
+    width: 100%;
+    
+}
+.content-four .four-wrap div p{
+    font-size: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+
+/* 页面尾部 */
+footer{
+    width: 100%;
+    height: 145px;
+    background-color: #373636;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+}
